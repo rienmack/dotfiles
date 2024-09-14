@@ -156,27 +156,6 @@ return {
             html = {
                 filetypes = { 'html', 'blade' },
             },
-            vuels = {
-                settings = {
-                    vetur = {
-                        format = {
-                            defaultFormatter = {
-                                js = "prettier",
-                                ts = "prettier",
-                            },
-                            options = {
-                                tabSize = 4,
-                                useTabs = false
-                            },
-                            scriptInitialIndent = true,
-                            styleInitialIndent = true,
-                            defaultFormatterOptions = {
-                                singleQuote = true,
-                            }
-                        }
-                    }
-                }
-            },
             lua_ls = {
                 -- cmd = {...},
                 -- filetypes = { ...},
