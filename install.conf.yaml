@@ -2,5 +2,6 @@
 
 - link:
     ~/.zshrc: zsh/zshrc
-
-
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global: git/gitignore_global
+    ~/.config/nvim: nvim
