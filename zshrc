@@ -14,8 +14,6 @@ alias wp="yarn install && rm -rf public/js && rm -rf public/css && npm run prod"
 alias ww='rm -rf public/js && rm -rf public/css && npm run watch -- --display none'
 alias wrh='rm -rf public/js && rm -rf public/css && npm run hot'
 alias rrevent="art dev:get-active-event"
-alias rreventwithcontract="art dev:get-active-event --has=roomContracts,$*"
-alias latest_db="ect latest --target eventconnect --env ~/EventConnect/roomroster.v2/.env"
 alias phpunit_fix="vendor/bin/php-cs-fixer fix"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
