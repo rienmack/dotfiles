@@ -1,6 +1,6 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: zshrc
+    ~/.zshrc: zsh/zshrc
 
 
