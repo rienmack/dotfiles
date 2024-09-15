@@ -1,7 +1,4 @@
-local s = function (plugin)
-    return { plugin, config = true }
-end
-
 return {
-    'tpope/vim-sleuth',
+  'tpope/vim-sleuth',
+  'github/copilot.vim',
 }
