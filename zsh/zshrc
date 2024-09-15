@@ -4,6 +4,8 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:~/.composer/vendor/bin
+
+#ALIASES
 alias art='valet php artisan'
 alias artc="art clear-compiled && art cache:clear && art route:clear && art config:clear && valet composer dumpautoload && art view:clear"
 alias aql="art queue:listen --tries=3"
@@ -15,6 +17,8 @@ alias ww='rm -rf public/js && rm -rf public/css && npm run watch -- --display no
 alias wrh='rm -rf public/js && rm -rf public/css && npm run hot'
 alias rrevent="art dev:get-active-event"
 alias phpunit_fix="vendor/bin/php-cs-fixer fix"
+alias vim="nvim"
+
 ZSH_THEME="robbyrussell"
 
 plugins=(git)
