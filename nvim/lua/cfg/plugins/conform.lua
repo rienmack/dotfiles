@@ -32,13 +32,26 @@ return { -- Autoformat
         end,
         formatters_by_ft = {
             lua = { 'stylua' },
-            php = { 'pint' },
+            php = { 'php-cs-fixer' },
             json = { 'fixjson', 'pint' },
-            javascript = { 'prettier' },
+            javascript = { 'eslint' },
+            vue = { 'eslint' },
             -- Conform can also run multiple formatters sequentially
             -- python = { "isort", "black" },
             --
             -- You can use 'stop_after_first' to run the first available formatter from the list
         },
+        formatters = {
+            ["php-cs-fixer"] = {
+                command = "php-cs-fixer",
+                args = {
+                    "fix",
+                    "--rules=@PSR12", -- Formatting preset. Other presets are available, see the php-cs-fixer docs.
+                    "$FILENAME",
+                },
+                stdin = false,
+            },
+        },
+        notify_on_error = true,
     },
 }
