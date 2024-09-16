@@ -14,3 +14,4 @@
     ~/.gitignore_global: git/gitignore_global
     ~/.config/nvim: nvim
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
+    ~/.config/starship.toml: starship/starship.toml
