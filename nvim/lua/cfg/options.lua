@@ -1,3 +1,6 @@
+-- Turn off autofomatting
+vim.g.autoformat = false
+
 vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
@@ -12,7 +15,7 @@ vim.opt.mouse = 'a'
 vim.opt.showmode = false
 
 vim.schedule(function()
-    vim.opt.clipboard = 'unnamedplus'
+  vim.opt.clipboard = 'unnamedplus'
 end)
 
 -- Enable break indent
