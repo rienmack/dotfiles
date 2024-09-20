@@ -163,7 +163,7 @@ return {
       vuels = {
         cmd = { 'vls' },
         filetypes = { 'vue' },
-        root_pattern = {"package.json", "vue.config.js"},
+        root_pattern = { 'package.json', 'vue.config.js' },
         settings = {
           vetur = {
             format = {
@@ -183,8 +183,8 @@ return {
               validation = {
                 script = true,
                 style = true,
-                template = true
-              }
+                template = true,
+              },
             },
           },
         },

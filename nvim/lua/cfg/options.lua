@@ -1,6 +1,3 @@
--- Turn off autofomatting
-vim.g.autoformat = false
-
 vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
