@@ -31,10 +31,11 @@ return { -- Autoformat
     end,
     formatters_by_ft = {
       lua = { 'stylua' },
-      php = { 'php-cs-fixer'},
+      php = { 'php-cs-fixer' },
       json = { 'fixjson', 'pint' },
       javascript = { 'eslint' },
       vue = { 'eslint' },
+      go = { 'gofmt', 'goimports' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --

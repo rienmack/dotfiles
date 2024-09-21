@@ -160,6 +160,11 @@ return {
       html = {
         filetypes = { 'html', 'blade' },
       },
+      gopls = {
+        cmd = { 'gopls' },
+        filetypes = { 'go' },
+        root_pattern = { 'go.mod', '.git' },
+      },
       vuels = {
         cmd = { 'vls' },
         filetypes = { 'vue' },

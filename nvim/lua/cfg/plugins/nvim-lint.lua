@@ -4,6 +4,7 @@ return {
   opts = {
     linters_by_ft = {
       php = { 'phpcs' },
+      go = { 'golangci-lint' },
     },
   },
 }
