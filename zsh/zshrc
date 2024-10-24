@@ -18,6 +18,7 @@ alias wrh='rm -rf public/js && rm -rf public/css && npm run hot'
 alias rrevent="art dev:get-active-event"
 alias phpunit_fix="vendor/bin/php-cs-fixer fix"
 alias vim="nvim"
+alias lg="Lazygit"
 
 ZSH_THEME="robbyrussell"
 
