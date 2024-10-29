@@ -152,13 +152,14 @@ return {
     --  - settings (table): Override the default settings passed when initializing the server.
     --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
     local servers = {
-      intelephense = {
-        cmd = { 'intelephense', '--stdio' },
-        filetypes = { 'php' },
-        root_pattern = { 'composer.json', '.git' },
-      },
+      intelephense = {},
       html = {
         filetypes = { 'html', 'blade' },
+        settings = {
+          intelephense = {
+            telemetry = { enabled = false },
+          },
+        },
       },
       gopls = {
         cmd = { 'gopls' },
