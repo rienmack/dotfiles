@@ -36,5 +36,14 @@ return {
 
     -- experimental signature help support
     -- trigger = { signature_help = { enabled = true } }
+    windows = {
+      autocomplete = {
+        draw = 'reversed',
+        winblend = vim.o.pumblend,
+      },
+      documentation = {
+        auto_show = true,
+      },
+    },
   },
 }
