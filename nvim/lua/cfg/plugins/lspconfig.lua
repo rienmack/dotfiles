@@ -6,6 +6,7 @@ return {
     { 'williamboman/mason.nvim', config = true }, -- NOTE: Must be loaded before dependants
     'williamboman/mason-lspconfig.nvim',
     'WhoIsSethDaniel/mason-tool-installer.nvim',
+    'saghen/blink.cmp',
 
     -- Useful status updates for LSP.
     -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
@@ -13,6 +14,7 @@ return {
 
     -- Allows extra capabilities provided by nvim-cmp
     'hrsh7th/cmp-nvim-lsp',
+    'saghen/blink.cmp',
   },
   config = function()
     -- Brief aside: **What is LSP?**
@@ -155,11 +157,6 @@ return {
       intelephense = {},
       html = {
         filetypes = { 'html', 'blade' },
-        settings = {
-          intelephense = {
-            telemetry = { enabled = false },
-          },
-        },
       },
       gopls = {
         cmd = { 'gopls' },
