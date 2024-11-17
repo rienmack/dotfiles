@@ -167,6 +167,9 @@ return {
         filetypes = { 'vue' },
         root_pattern = { 'package.json', 'vue.config.js' },
       },
+      ts_ls = {
+        filetypes = { 'javascriptreact', 'javascript.jsx', 'typescript', 'typescriptreact', 'typescript.tsx' },
+      },
       lua_ls = {
         -- cmd = {...},
         -- filetypes = { ...},
