@@ -168,7 +168,7 @@ return {
         root_pattern = { 'package.json', 'vue.config.js' },
       },
       ts_ls = {
-        filetypes = { 'javascript', 'javascriptreact', 'javascript.jsx', 'typescript', 'typescriptreact', 'typescript.tsx' },
+        filetypes = { 'javascriptreact', 'javascript.jsx', 'typescript', 'typescriptreact', 'typescript.tsx' },
       },
       lua_ls = {
         -- cmd = {...},
@@ -185,7 +185,6 @@ return {
         },
       },
     }
-
     -- Ensure the servers and tools above are installed
     --  To check the current status of installed tools and/or manually install
     --  other tools, you can run
