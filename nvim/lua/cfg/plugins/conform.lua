@@ -33,7 +33,7 @@ return { -- Autoformat
       lua = { 'stylua' },
       php = { 'php-cs-fixer' },
       json = { 'fixjson', 'pint' },
-      javascript = { 'eslint' },
+      javascript = { 'eslint', stop_after_first = true },
       vue = { 'eslint' },
       go = { 'gofmt', 'goimports' },
       -- Conform can also run multiple formatters sequentially
