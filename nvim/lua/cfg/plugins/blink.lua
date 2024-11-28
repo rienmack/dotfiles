@@ -35,14 +35,17 @@ return {
     -- accept = { auto_brackets = { enabled = true } }
 
     -- experimental signature help support
-    -- trigger = { signature_help = { enabled = true } }
+    -- trigger = { signature_help = { enabled = true }
     windows = {
-      autocomplete = {
-        draw = 'reversed',
-        winblend = vim.o.pumblend,
-      },
       documentation = {
         auto_show = true,
+      },
+    },
+    completion = {
+      menu = {
+        draw = {
+          columns = { { 'label', 'label_description', gap = 1 }, { 'kind_icon', 'kind' } },
+        },
       },
     },
   },
