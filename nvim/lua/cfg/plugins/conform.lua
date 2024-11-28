@@ -30,7 +30,6 @@ return { -- Autoformat
       }
     end,
     formatters_by_ft = {
-      lua = { 'stylua' },
       php = { 'php-cs-fixer' },
       json = { 'fixjson', 'pint' },
       go = { 'gofmt', 'goimports' },
