@@ -32,6 +32,7 @@ return {
         filetypes = { 'javascriptreact', 'javascript.jsx', 'typescript', 'typescriptreact', 'typescript.tsx' },
       },
       lua_ls = {},
+      eslint = {}
     }
   },
   config = function(_, opts)
