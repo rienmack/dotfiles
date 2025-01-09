@@ -5,31 +5,23 @@ return {
     'rafamadriz/friendly-snippets',
     "giuxtaposition/blink-cmp-copilot",
   },
-
-  version = 'v0.*',
-
-  ---@module 'blink.cmp'
-  ---@type blink.cmp.Config
+  completion = {
+    keyword = { range = 'full' },
+    menu = { border = 'single' },
+    documentation = { window = { border = 'single' } },
+  },
   opts = {
     sources = {
+      default = { "lsp", "path", "snippets", "buffer", "copilot" },
       providers = {
         copilot = {
           name = "copilot",
           module = "blink-cmp-copilot",
+          score_offset = 100,
+          async = true
         },
-      },
-      completion = {
-        enabled_providers = { "lsp", "path", "snippets", "buffer", "copilot" },
-      },
-    },
-    keymap = { preset = 'default' },
-
-    nerd_font_variant = 'mono',
-
-    windows = {
-      documentation = {
-        auto_show = true,
       },
     },
   },
+  documentation = { auto_show = true },
 }
