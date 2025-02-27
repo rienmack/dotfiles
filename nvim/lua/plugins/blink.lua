@@ -5,11 +5,13 @@ return {
     'rafamadriz/friendly-snippets',
     "giuxtaposition/blink-cmp-copilot",
   },
+  version = '*',
   completion = {
     keyword = { range = 'full' },
     menu = { border = 'single' },
     documentation = { window = { border = 'single' } },
   },
+  fuzzy = { implementation = "prefer_rust_with_warning" },
   opts = {
     sources = {
       default = { "lsp", "path", "snippets", "buffer", "copilot" },
