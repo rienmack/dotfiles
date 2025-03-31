@@ -16,7 +16,7 @@ return {
     servers = {
       intelephense = {},
       html = {
-        filetypes = { 'html', 'blade' },
+        filetypes = { 'html' },
       },
       gopls = {
         cmd = { 'gopls' },
