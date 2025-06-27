@@ -15,8 +15,13 @@ return {
   opts = {
     servers = {
       intelephense = {},
-      html = {
-        filetypes = { 'html' },
+      emmet_ls = {
+        filetypes = { 'blade', 'html' },
+        init_options = {
+          includeLanguages = {
+            blade = 'html'
+          }
+        }
       },
       gopls = {
         cmd = { 'gopls' },
